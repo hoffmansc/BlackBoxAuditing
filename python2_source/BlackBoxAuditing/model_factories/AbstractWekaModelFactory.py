@@ -11,7 +11,7 @@ import tempfile
 
 here = os.path.abspath(os.path.dirname(__file__))
 with open(os.path.join(here, "weka.path"), 'r') as f:
-  WEKA_PATH = f.readline()
+  WEKA_PATH = os.path.join(here, f.readline())
 
 if not os.path.isfile(WEKA_PATH):
   raise Exception("WEKA_PATH is not properly set!")

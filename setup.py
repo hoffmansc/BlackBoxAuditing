@@ -54,6 +54,11 @@ INSTALL_REQUIRES = [
   'pandas',
   'numpy']
 
+if sys.version_info[0] == 2:
+  del INSTALL_REQUIRES[INSTALL_REQUIRES.index('Orange3>=3.3.5,<=3.7.1')]
+  INSTALL_REQUIRES[INSTALL_REQUIRES.index('networkx')] += '<2'
+  INSTALL_REQUIRES.append('tensorflow')
+
 CMDCLASS = {
 }
 

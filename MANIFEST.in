@@ -12,10 +12,12 @@ include BlackBoxAuditing/test_data/*.csv
 include BlackBoxAuditing/test_data/*.arff
 
 include python2_source
+include python2_source/BlackBoxAuditing/weka.jar
 include python2_source/BlackBoxAuditing/*.py
 include python2_source/BlackBoxAuditing/*.sh
 include python2_source/BlackBoxAuditing/experiments/*.py
 include python2_source/BlackBoxAuditing/experiments/*/*.py
+include python2_source/BlackBoxAuditing/model_factories/weka.path
 include python2_source/BlackBoxAuditing/model_factories/*.py
 include python2_source/BlackBoxAuditing/repairers/*.py
 include python2_source/BlackBoxAuditing/repairers/binning/*.py
